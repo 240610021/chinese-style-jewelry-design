@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    h1 {
+      font-size: 16px;
+      margin: 0 0 15px 0;
+      color: #333;
+    }
+    .status {
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+    .status.running {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    .status.completed {
+      background: #e8f5e9;
+      color: #388e3c;
+    }
+    .status.error {
+      background: #ffebee;
+      color: #c62828;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .btn-primary {
+      background: #ff5000;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #e64800;
+    }
+    .btn-primary:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    .btn-secondary {
+      background: #f5f5f5;
+      color: #333;
+    }
+    .btn-secondary:hover {
+      background: #e0e0e0;
+    }
+    .progress {
+      margin-top: 15px;
+      padding: 10px;
+      background: #fafafa;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .progress-bar {
+      height: 6px;
+      background: #e0e0e0;
+      border-radius: 3px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #ff5000;
+      transition: width 0.3s;
+    }
+    .log {
+      margin-top: 10px;
+      padding: 8px;
+      background: #f5f5f5;
+      border-radius: 4px;
+      font-size: 11px;
+      max-height: 100px;
+      overflow-y: auto;
+      color: #666;
+    }
+    .log-entry {
+      margin: 2px 0;
+      padding: 2px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .settings {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .setting-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    input[type="number"] {
+      width: 60px;
+      padding: 4px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏪 淘宝店铺MHTML保存器</h1>
+  
+  <div id="status" class="status">
+    准备就绪，点击"开始保存"按钮
+  </div>
+
+  <button id="startBtn" class="btn-primary">开始保存商品</button>
+  <button id="stopBtn" class="btn-secondary" style="display:none;">停止保存</button>
+  <button id="exportBtn" class="btn-secondary">导出商品列表</button>
+
+  <div class="progress" id="progressSection" style="display:none;">
+    <div>进度: <span id="current">0</span> / <span id="total">0</span></div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+    </div>
+    <div style="margin-top: 5px; color: #666;">
+      当前: <span id="currentItem">-</span>
+    </div>
+  </div>
+
+  <div class="log" id="log"></div>
+
+  <div class="settings">
+    <div class="setting-item">
+      <label>保存间隔(秒):</label>
+      <input type="number" id="delayMin" value="3" min="1" max="10">
+    </div>
+    <div class="setting-item">
+      <label>最大商品数:</label>
+      <input type="number" id="maxItems" value="100" min="1" max="1000">
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
