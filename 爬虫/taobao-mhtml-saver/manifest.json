@@ -6,7 +6,9 @@
   "permissions": [
     "activeTab",
     "downloads",
-    "storage"
+    "storage",
+    "debugger",
+    "scripting"
   ],
   "host_permissions": [
     "*://*.taobao.com/*",
