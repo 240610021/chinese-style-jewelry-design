@@ -171,7 +171,7 @@ h4 {
     margin-bottom: 0.2cm;
     font-weight: 600;
 }
-p { margin: 0.3cm 0; text-align: justify; }
+p { margin: 0.3cm 0; text-align: justify; orphans: 3; widows: 3; }
 
 /* ===== 表格 ===== */
 table {
@@ -233,6 +233,7 @@ blockquote {
     line-height: 1.7;
     border-radius: 0 8px 8px 0;
     position: relative;
+    page-break-inside: avoid;
 }
 blockquote::before {
     content: '“';
@@ -248,8 +249,8 @@ blockquote::before {
 blockquote p { margin: 0.15cm 0; }
 
 /* ===== 列表 ===== */
-ul, ol { margin: 0.3cm 0; padding-left: 1cm; }
-li { margin: 0.12cm 0; }
+ul, ol { margin: 0.3cm 0; padding-left: 1cm; page-break-inside: auto; }
+li { margin: 0.12cm 0; page-break-inside: avoid; }
 ul li { list-style: none; position: relative; padding-left: 0.5cm; }
 ul li::before {
     content: '';
