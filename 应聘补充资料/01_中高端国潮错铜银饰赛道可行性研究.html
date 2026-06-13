@@ -322,6 +322,7 @@ hr {
     margin: 0.6cm 0 0.3cm 0;
     padding-left: 0.3cm;
     border-left: 3px solid #d4a017;
+    page-break-after: avoid;
 }
 .bar-compare {
     margin: 0.3cm 0;
@@ -428,11 +429,14 @@ hr {
     page-break-inside: avoid;
 }
 .donut, .pie {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     flex-shrink: 0;
-    box-shadow: inset 0 0 0 36px #fff;
+}
+.donut svg, .pie svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 .donut-legend, .pie-legend {
     flex: 1;
@@ -827,10 +831,10 @@ hr {
 <td>★★★☆☆</td>
 </tr>
 <tr>
-<td>区域老字号</td>
-<td>孔雀珠宝、瑞宝匠</td>
-<td>文化正宗、景区属性强</td>
-<td>线上运营弱、品牌老化、年轻化转型慢</td>
+<td>区域文化品牌</td>
+<td>蔡松延、孔雀珠宝</td>
+<td>文化正宗、原创设计、工艺深耕</td>
+<td>产能受限、线上运营弱、规模化慢</td>
 <td>★★☆☆☆</td>
 </tr>
 <tr>
@@ -921,7 +925,7 @@ hr {
 <li><strong>价格敏感度</strong>：低——预算2000-10000元</li>
 <li><strong>关键洞察</strong>：重视溯源、证书、限量编号，决策周期可达数月</li>
 </ul>
-<div class="viz-title">核心客群占比</div><div class="donut-wrap"><div class="donut" style="background: conic-gradient(#c41e3a 0% 40%, #e66 40% 70%, #f88 70% 85%, #fcc 85% 100%);"></div><div class="donut-legend"><div class="d-leg"><span class="d-dot" style="background:#c41e3a"></span>Z世代国潮追随者 40%</div><div class="d-leg"><span class="d-dot" style="background:#e66"></span>新锐白领 30%</div><div class="d-leg"><span class="d-dot" style="background:#f88"></span>玄学功能需求者 15%</div><div class="d-leg"><span class="d-dot" style="background:#fcc"></span>高净值收藏者 10%</div></div></div>
+<div class="viz-title">核心客群占比</div><div class="donut-wrap"><div class="donut"><svg width="180" height="180" viewBox="0 0 180 180"><circle cx="90" cy="90" r="74" fill="none" stroke="#c41e3a" stroke-width="32" stroke-dasharray="185.98 278.97" stroke-dashoffset="116.24"/><circle cx="90" cy="90" r="74" fill="none" stroke="#e66" stroke-width="32" stroke-dasharray="139.49 325.47" stroke-dashoffset="-69.74"/><circle cx="90" cy="90" r="74" fill="none" stroke="#f88" stroke-width="32" stroke-dasharray="69.74 395.21" stroke-dashoffset="-209.23"/><circle cx="90" cy="90" r="74" fill="none" stroke="#fcc" stroke-width="32" stroke-dasharray="46.50 418.46" stroke-dashoffset="-278.97"/><circle cx="90" cy="90" r="74" fill="none" stroke="#eee" stroke-width="32" stroke-dasharray="23.25 441.71" stroke-dashoffset="-325.47"/></svg></div><div class="donut-legend"><div class="d-leg"><span class="d-dot" style="background:#c41e3a"></span>Z世代国潮追随者 40%</div><div class="d-leg"><span class="d-dot" style="background:#e66"></span>新锐白领 30%</div><div class="d-leg"><span class="d-dot" style="background:#f88"></span>玄学功能需求者 15%</div><div class="d-leg"><span class="d-dot" style="background:#fcc"></span>高净值收藏者 10%</div><div class="d-leg"><span class="d-dot" style="background:#eee"></span>其他 5%</div></div></div>
 <h3 id="42">4.2 消费趋势演变</h3>
 <table>
 <thead>
@@ -1148,7 +1152,7 @@ hr {
 </tr>
 </tbody>
 </table>
-<div class="viz-title">渠道预算分配</div><div class="pie-wrap"><div class="pie" style="background: conic-gradient(#8B0000 0% 30%, #c41e3a 30% 55%, #d44 55% 75%, #f55 75% 90%, #faa 90% 95%, #fee 95% 100%);"></div><div class="pie-legend"><div class="p-leg"><span class="p-dot" style="background:#8B0000"></span>淘宝/天猫 30%</div><div class="p-leg"><span class="p-dot" style="background:#c41e3a"></span>抖音 25%</div><div class="p-leg"><span class="p-dot" style="background:#d44"></span>小红书 20%</div><div class="p-leg"><span class="p-dot" style="background:#f55"></span>微信私域 15%</div><div class="p-leg"><span class="p-dot" style="background:#faa"></span>B站 5%</div><div class="p-leg"><span class="p-dot" style="background:#fee"></span>出海 5%</div></div></div>
+<div class="viz-title">渠道预算分配</div><div class="pie-wrap"><div class="pie"><svg width="180" height="180" viewBox="0 0 180 180"><circle cx="90" cy="90" r="74" fill="none" stroke="#8B0000" stroke-width="32" stroke-dasharray="139.49 325.47" stroke-dashoffset="116.24"/><circle cx="90" cy="90" r="74" fill="none" stroke="#c41e3a" stroke-width="32" stroke-dasharray="116.24 348.72" stroke-dashoffset="-23.25"/><circle cx="90" cy="90" r="74" fill="none" stroke="#d44" stroke-width="32" stroke-dasharray="92.99 371.96" stroke-dashoffset="-139.49"/><circle cx="90" cy="90" r="74" fill="none" stroke="#f55" stroke-width="32" stroke-dasharray="69.74 395.21" stroke-dashoffset="-232.48"/><circle cx="90" cy="90" r="74" fill="none" stroke="#faa" stroke-width="32" stroke-dasharray="23.25 441.71" stroke-dashoffset="-302.22"/><circle cx="90" cy="90" r="74" fill="none" stroke="#fee" stroke-width="32" stroke-dasharray="23.25 441.71" stroke-dashoffset="-325.47"/></svg></div><div class="pie-legend"><div class="p-leg"><span class="p-dot" style="background:#8B0000"></span>淘宝/天猫 30%</div><div class="p-leg"><span class="p-dot" style="background:#c41e3a"></span>抖音 25%</div><div class="p-leg"><span class="p-dot" style="background:#d44"></span>小红书 20%</div><div class="p-leg"><span class="p-dot" style="background:#f55"></span>微信私域 15%</div><div class="p-leg"><span class="p-dot" style="background:#faa"></span>B站 5%</div><div class="p-leg"><span class="p-dot" style="background:#fee"></span>出海 5%</div></div></div>
 <h3 id="63">6.3 内容增长飞轮</h3>
 <p><strong>小红书</strong>：KOC矩阵（50个素人账号）+ 搜索SEO（"本命年手链""男士银饰"等关键词拦截）</p>
 <p><strong>抖音</strong>：匠人IP账号（展示3D建模与数字工艺过程）+ 直播间"从设计文件到成品"的透明化生产展示，利用数字化工艺的科技感与文化厚度制造停留</p>

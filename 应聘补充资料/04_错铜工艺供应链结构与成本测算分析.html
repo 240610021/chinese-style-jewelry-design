@@ -322,6 +322,7 @@ hr {
     margin: 0.6cm 0 0.3cm 0;
     padding-left: 0.3cm;
     border-left: 3px solid #d4a017;
+    page-break-after: avoid;
 }
 .bar-compare {
     margin: 0.3cm 0;
@@ -428,11 +429,14 @@ hr {
     page-break-inside: avoid;
 }
 .donut, .pie {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     flex-shrink: 0;
-    box-shadow: inset 0 0 0 36px #fff;
+}
+.donut svg, .pie svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 .donut-legend, .pie-legend {
     flex: 1;
@@ -1000,7 +1004,7 @@ hr {
 </tr>
 </tbody>
 </table>
-<div class="viz-title">错铜手镯成本占比</div><div class="pie-wrap"><div class="pie" style="background: conic-gradient(#8B0000 0% 35%, #c41e3a 35% 47%, #d44 47% 77%, #f55 77% 100%);"></div><div class="pie-legend"><div class="p-leg"><span class="p-dot" style="background:#8B0000"></span>银料 35%</div><div class="p-leg"><span class="p-dot" style="background:#c41e3a"></span>铜料 12%</div><div class="p-leg"><span class="p-dot" style="background:#d44"></span>人工 30%</div><div class="p-leg"><span class="p-dot" style="background:#f55"></span>其他 23%</div></div></div>
+<div class="viz-title">错铜手镯成本占比</div><div class="pie-wrap"><div class="pie"><svg width="180" height="180" viewBox="0 0 180 180"><circle cx="90" cy="90" r="74" fill="none" stroke="#8B0000" stroke-width="32" stroke-dasharray="162.73 302.22" stroke-dashoffset="116.24"/><circle cx="90" cy="90" r="74" fill="none" stroke="#c41e3a" stroke-width="32" stroke-dasharray="55.79 409.16" stroke-dashoffset="-46.50"/><circle cx="90" cy="90" r="74" fill="none" stroke="#d44" stroke-width="32" stroke-dasharray="139.49 325.47" stroke-dashoffset="-102.29"/><circle cx="90" cy="90" r="74" fill="none" stroke="#f55" stroke-width="32" stroke-dasharray="106.94 358.02" stroke-dashoffset="-241.78"/></svg></div><div class="pie-legend"><div class="p-leg"><span class="p-dot" style="background:#8B0000"></span>银料 35%</div><div class="p-leg"><span class="p-dot" style="background:#c41e3a"></span>铜料 12%</div><div class="p-leg"><span class="p-dot" style="background:#d44"></span>人工 30%</div><div class="p-leg"><span class="p-dot" style="background:#f55"></span>其他 23%</div></div></div>
 <hr />
 <h2 id="_5">四、成本结构测算模型</h2>
 <h3 id="41">4.1 单位成本拆解（以山海系列手镯为例）</h3>

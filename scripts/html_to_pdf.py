@@ -14,6 +14,7 @@ def html_to_pdf(html_path: str, pdf_path: str):
         "--disable-gpu",
         "--no-sandbox",
         "--run-all-compositor-stages-before-draw",
+        "--no-pdf-header-footer",
         f"--print-to-pdf={pdf_path}",
         f"file:///{html_path.replace(os.sep, '/')}",
     ]
