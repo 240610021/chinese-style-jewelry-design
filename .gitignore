@@ -14,6 +14,7 @@ __pycache__/
 # 数据文件（大数据量不推送）
 *.mhtml
 *.html
+!应聘补充资料/*.html
 
 # IDE
 .trae/
