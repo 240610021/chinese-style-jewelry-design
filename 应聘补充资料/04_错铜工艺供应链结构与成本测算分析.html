@@ -819,7 +819,7 @@ hr {
 </tr>
 <tr>
 <td><strong>工费参考</strong></td>
-<td>简单款15-30元/件；复杂款50-100元/件；顶级师傅可达150元+/件</td>
+<td>简单款20-40元/件；复杂款50-120元/件；顶级师傅可达150元+/件（均指2025-2026年行情，受人工成本上涨影响，建议按年上浮5-10%预估）</td>
 </tr>
 <tr>
 <td><strong>关键考察指标</strong></td>
@@ -924,10 +924,110 @@ hr {
 </tr>
 </tbody>
 </table>
-<div class="viz-title">分阶段供应链配置</div><div class="matrix-three"><div class="m-card"><div class="m-tier">启动期</div><div class="m-name">小批量验证</div><div class="m-price">3-5款</div><div class="m-scene">手工工坊 / 灵活</div></div><div class="m-card m-main"><div class="m-tier">增长期</div><div class="m-name">规模化</div><div class="m-price">10-20款</div><div class="m-scene">签约工厂 / 稳定</div></div><div class="m-card m-lux"><div class="m-tier">稳定期</div><div class="m-name">纵深整合</div><div class="m-price">全矩阵</div><div class="m-scene">自有工坊 / 壁垒</div></div></div>
 <hr />
-<h2 id="_4">三、供应链分阶段配置建议</h2>
-<h3 id="31-0-3">3.1 启动期（0-3个月）</h3>
+<h2 id="_4">三、设计端与供应链的协同流程</h2>
+<h3 id="30-">3.0 设计师-供应链协同全景</h3>
+<p>设计总监在供应链管理中扮演"翻译官"与"质检员"的双重角色——将设计语言翻译为工艺语言，同时将工艺边界反馈给设计决策。以下是设计师与供应链各环节的协同流程：</p>
+<pre><code>设计端输出                      供应链端反馈
+    │                              │
+    ├─ 概念草图 ──────────────────→ 工艺可行性初步评估
+    │                              │  · 该纹样在錾刻/错铜工艺下是否可还原？
+    │                              │  · 铜纹嵌入的深度/宽度是否有工艺瓶颈？
+    │                              │  · 预计工费区间与打样周期
+    │                              │
+    ├─ 3D建模文件 ────────────────→ 开模/铸造可行性评估
+    │                              │  · 模具精度是否能满足设计公差要求？
+    │                              │  · 3D文件是否需要格式转换/调整？
+    │                              │  · 分模线位置是否影响视觉质量？
+    │                              │
+    ├─ 《打样工艺要求单》 ────────→ 首版打样
+    │  · 银重/铜比精确参数          │  · 实物还原度评估
+    │  · 錾刻深度标准化标注         │  · 工艺难点反馈（哪些效果做不出来）
+    │  · 表面处理要求               │  · 工费与周期确认
+    │                              │
+    ├─ 设计修改意见（附标注图） ──→ 二次打样
+    │                              │  · 修改项逐一确认
+    │                              │  · 封样签收
+    │                              │
+    └─ 《量产工艺标准书》 ────────→ 批量生产
+       · 尺寸公差（如手镯内径±1mm）  · 过程抽检
+       · 铜纹深度标准                 · 大货交付
+       · 抛光亮度等级
+</code></pre>
+<h3 id="31">3.1 设计师参与供应商评估的关键维度</h3>
+<p>设计师（非采购岗）在供应商遴选中承担的角色是"工艺可行性裁判"——评估供应商对设计意图的理解与还原能力：</p>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>设计师的评判标准</th>
+<th>评分权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>看图打样还原度</strong></td>
+<td>发送同一张设计图给不同供应商，对比打样成品与设计图的偏差程度（纹样精细度、比例、整体气质）</td>
+<td>40%</td>
+</tr>
+<tr>
+<td><strong>工艺创新意愿</strong></td>
+<td>当设计提出工艺挑战时，供应商是"能做"还是"想办法做"？前者是执行，后者是共创</td>
+<td>25%</td>
+</tr>
+<tr>
+<td><strong>细节敏感度</strong></td>
+<td>供应商是否对微距细节（铜纹边缘锐度、抛光亮度均匀性）有自发的品控意识</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>沟通理解力</strong></td>
+<td>修改意见的传达效率——是否"说一遍就理解"，还是需要反复解释</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32">3.2 设计文件至工厂的"开箱即用"标准</h3>
+<p>为避免设计师与工厂之间因"语言不通"导致的修改返工，设计文件在发送前需满足以下"开箱即用"标准：</p>
+<table>
+<thead>
+<tr>
+<th>文件要素</th>
+<th>标准要求</th>
+<th>常见问题与规避</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3D文件</strong></td>
+<td>STL/OBJ格式，已做壁厚检查（银层≥1mm，铜层≥2mm），无破面/错误法线</td>
+<td>设计师建的"视觉模型"往往壁厚不够，需在发给工厂前做"可制造性检查"</td>
+</tr>
+<tr>
+<td><strong>尺寸标注</strong></td>
+<td>二维工程图标注所有关键尺寸（外径、内径、厚度、铜纹宽度），单位mm</td>
+<td>手绘标注优于3D截图标注，更直观准确</td>
+</tr>
+<tr>
+<td><strong>材质说明</strong></td>
+<td>明确标注银纯度（S925/S999）、铜材类型（紫铜T2）、各部位用量</td>
+<td>避免"银色部分用银"这类模糊表述</td>
+</tr>
+<tr>
+<td><strong>表面处理</strong></td>
+<td>提供"处理前/处理后"对比参考图，标注亮度等级</td>
+<td>只说"做旧"无法保证一致性，需提供实物参考样</td>
+</tr>
+<tr>
+<td><strong>工艺顺序</strong></td>
+<td>明确工艺流程（如：铸造→錾刻→错铜→打磨→做旧→防氧化），避免工厂省步骤</td>
+<td>部分工厂为节省成本会跳过"打磨"环节，导致成品粗糙</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_5">四、供应链分阶段配置建议</h2>
+<h3 id="41-0-3">4.1 启动期（0-3个月）</h3>
 <table>
 <thead>
 <tr>
@@ -954,7 +1054,7 @@ hr {
 </tr>
 </tbody>
 </table>
-<h3 id="32-4-9">3.2 增长期（4-9个月）</h3>
+<h3 id="42-4-9">4.2 增长期（4-9个月）</h3>
 <table>
 <thead>
 <tr>
@@ -981,7 +1081,7 @@ hr {
 </tr>
 </tbody>
 </table>
-<h3 id="33-10-12">3.3 稳定期（10-12个月）</h3>
+<h3 id="43-10-12">4.3 稳定期（10-12个月）</h3>
 <table>
 <thead>
 <tr>
@@ -1004,10 +1104,9 @@ hr {
 </tr>
 </tbody>
 </table>
-<div class="viz-title">错铜手镯成本占比</div><div class="pie-wrap"><div class="pie"><svg width="180" height="180" viewBox="0 0 180 180"><circle cx="90" cy="90" r="74" fill="none" stroke="#8B0000" stroke-width="32" stroke-dasharray="162.73 302.22" stroke-dashoffset="116.24"/><circle cx="90" cy="90" r="74" fill="none" stroke="#c41e3a" stroke-width="32" stroke-dasharray="55.79 409.16" stroke-dashoffset="-46.50"/><circle cx="90" cy="90" r="74" fill="none" stroke="#d44" stroke-width="32" stroke-dasharray="139.49 325.47" stroke-dashoffset="-102.29"/><circle cx="90" cy="90" r="74" fill="none" stroke="#f55" stroke-width="32" stroke-dasharray="106.94 358.02" stroke-dashoffset="-241.78"/></svg></div><div class="pie-legend"><div class="p-leg"><span class="p-dot" style="background:#8B0000"></span>银料 35%</div><div class="p-leg"><span class="p-dot" style="background:#c41e3a"></span>铜料 12%</div><div class="p-leg"><span class="p-dot" style="background:#d44"></span>人工 30%</div><div class="p-leg"><span class="p-dot" style="background:#f55"></span>其他 23%</div></div></div>
 <hr />
-<h2 id="_5">四、成本结构测算模型</h2>
-<h3 id="41">4.1 单位成本拆解（以山海系列手镯为例）</h3>
+<h2 id="_6">五、成本结构测算模型</h2>
+<h3 id="51">5.1 单位成本拆解（以山海系列手镯为例）</h3>
 <table>
 <thead>
 <tr>
@@ -1020,9 +1119,9 @@ hr {
 <tbody>
 <tr>
 <td>银料</td>
-<td>40-60</td>
-<td>25%</td>
-<td>按银价20元/克，银重2-3克</td>
+<td>32-48</td>
+<td>20%</td>
+<td>按银价16元/克，银重2-3克</td>
 </tr>
 <tr>
 <td>铜料</td>
@@ -1062,19 +1161,19 @@ hr {
 </tr>
 <tr>
 <td>损耗</td>
-<td>10-15</td>
+<td>8-12</td>
 <td>6%</td>
 <td>错铜工艺损耗率8-12%</td>
 </tr>
 <tr>
 <td><strong>合计</strong></td>
-<td><strong>133-213</strong></td>
+<td><strong>118-198</strong></td>
 <td><strong>100%</strong></td>
 <td>视复杂度与供应商报价浮动</td>
 </tr>
 </tbody>
 </table>
-<h3 id="42">4.2 定价与毛利空间</h3>
+<h3 id="52">5.2 定价与毛利空间</h3>
 <table>
 <thead>
 <tr>
@@ -1088,24 +1187,24 @@ hr {
 <tr>
 <td>入门定价</td>
 <td>298元</td>
-<td>133-160元</td>
-<td>46-55%</td>
+<td>118-145元</td>
+<td>51-60%</td>
 </tr>
 <tr>
 <td>主力定价</td>
 <td>468元</td>
-<td>160-190元</td>
-<td>59-66%</td>
+<td>145-175元</td>
+<td>63-69%</td>
 </tr>
 <tr>
 <td>高端定价</td>
 <td>688元</td>
-<td>190-213元</td>
-<td>69-72%</td>
+<td>175-198元</td>
+<td>71-75%</td>
 </tr>
 </tbody>
 </table>
-<h3 id="43">4.3 银价波动敏感性测试</h3>
+<h3 id="53">5.3 银价波动敏感性测试</h3>
 <p>以山海系列手镯（总重30g，银占比40%，铜占比60%）为例：</p>
 <table>
 <thead>
@@ -1121,44 +1220,43 @@ hr {
 <tr>
 <td>7</td>
 <td>84</td>
-<td>190</td>
+<td>175</td>
 <td>468</td>
-<td>59%</td>
+<td>63%</td>
 </tr>
 <tr>
 <td>10</td>
 <td>120</td>
-<td>220</td>
+<td>205</td>
 <td>468</td>
-<td>53%</td>
+<td>56%</td>
 </tr>
 <tr>
 <td>15</td>
 <td>180</td>
-<td>270</td>
+<td>255</td>
 <td>468</td>
-<td>42%</td>
-</tr>
-<tr>
-<td>20</td>
-<td>240</td>
-<td>320</td>
-<td>468</td>
-<td>32%</td>
-</tr>
-<tr>
-<td>25</td>
-<td>300</td>
-<td>370</td>
-<td>688</td>
 <td>46%</td>
+</tr>
+<tr>
+<td>18</td>
+<td>216</td>
+<td>280</td>
+<td>468</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>23</td>
+<td>276</td>
+<td>330</td>
+<td>688</td>
+<td>52%</td>
 </tr>
 </tbody>
 </table>
-<div class="viz-title">供应商考察Checklist</div><div class="checklist"><div class="cl-row"><span class="cl-check">✓</span><span>样品工艺还原度</span><div class="cl-track"><div class="cl-bar" style="width:100%"></div></div></div><div class="cl-row"><span class="cl-check">✓</span><span>交期稳定性</span><div class="cl-track"><div class="cl-bar" style="width:90%"></div></div></div><div class="cl-row"><span class="cl-check">✓</span><span>最小起订量(MOQ)</span><div class="cl-track"><div class="cl-bar" style="width:80%"></div></div></div><div class="cl-row"><span class="cl-check">✓</span><span>银料纯度检测报告</span><div class="cl-track"><div class="cl-bar" style="width:100%"></div></div></div><div class="cl-row"><span class="cl-check">✓</span><span>环保与合规资质</span><div class="cl-track"><div class="cl-bar" style="width:85%"></div></div></div></div>
-<p><strong>结论</strong>：当银价超过20元/克时，维持468元零售价将导致毛利率跌破35%的安全线。此时需启动动态调价机制或推出铜占比更高的"抗通胀系列"。</p>
+<p><strong>结论</strong>：当银价超过18元/克时，维持468元零售价将导致毛利率跌破40%的安全线。此时需启动动态调价机制或推出铜占比更高的"抗通胀系列"。2026年6月银价约15-16元/克，主力定价468元毛利率约46-50%，处于安全区间。</p>
 <hr />
-<h2 id="checklist">五、供应商考察Checklist</h2>
+<h2 id="checklist">六、供应商考察Checklist</h2>
 <p>首次拜访錾刻工坊时，建议携带以下评估清单：</p>
 <ul>
 <li>[ ] 现场观察师傅錾刻手法，判断熟练度与稳定性</li>
@@ -1172,7 +1270,7 @@ hr {
 </ul>
 <hr />
 <blockquote>
-<p><strong>研究结论</strong>：错铜工艺的供应链呈现出"核心环节人工依赖度高、产能弹性差、地域集中度较高"的特征。品牌方的供应链策略需在"控制力"与"灵活性"之间寻找平衡——启动期以绑定1家主供应商+预售模式降低风险；增长期拓展供应商网络并建立标准化体系；稳定期考虑核心款式的产能自主可控。成本测算模型显示，在银价20元/克的水平下，468元主力定价仍可维持55%左右的毛利率，但银价若继续攀升，动态调价与产品结构调整将成为必选项。</p>
+<p><strong>研究结论</strong>：错铜工艺的供应链呈现出"核心环节人工依赖度高、产能弹性差、地域集中度较高"的特征。品牌方的供应链策略需在"控制力"与"灵活性"之间寻找平衡——启动期以绑定1家主供应商+预售模式降低风险；增长期拓展供应商网络并建立标准化体系；稳定期考虑核心款式的产能自主可控。成本测算模型显示，在银价16元/克的水平下，468元主力定价仍可维持65%左右的毛利率，但银价若攀升至18元/克以上，动态调价与产品结构调整将成为必选项。</p>
 </blockquote>
 <div class="footer-note">本文件仅供应聘展示使用 · 数据来源：公开市场信息及一手样本分析</div>
 </body>
